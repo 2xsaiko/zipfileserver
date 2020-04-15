@@ -1,0 +1,16 @@
+[package]
+name = "zipfileserver"
+version = "0.1.0"
+authors = ["2xsaiko <git@dblsaiko.net>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tree_magic = "0.2.3"
+mime_guess = "2.0.3"
+zip = "0.5.5"
+rocket = "0.4.4"
+mime = "0.3.16"
+mime02 = { package = "mime", version = "0.2.6" } # needed because hyper requires this version
+thiserror = "1.0.15"
